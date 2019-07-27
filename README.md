@@ -23,7 +23,7 @@ python test/test01.py
 ## Follow upstream
 ```
 # if you forked this repository
-git remote add upstream git://github.com/DQNEO/Renshu.git
+git remote add upstream git://github.com/seccamp-z/z2scanner.git
 
 # follow upstream
 git fetch upstream
