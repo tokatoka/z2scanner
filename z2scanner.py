@@ -16,7 +16,7 @@ def check_md5(path):
 
 def print_output(path,result):
     cur = datetime.today().strftime("%Y-%m-%d %H-%M-%S")
-    output="target path:%s\tscanner version:%s\tscan date:%s\tis malicious:%s\treason method:%s" % (path,version,cur,result[0],result[1])
+    output="target path:%s\tscanner version:%s\tscan date:%s\tis malicious:%s\treason method:%s" % (path,version,cur,result[0],'' if result[1] is None else result[1])
     print(output)
 
 def analyze(path):
