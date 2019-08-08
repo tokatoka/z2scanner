@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import sys,os
+import json
 from datetime import datetime
 
 version = "0.0.1"
@@ -35,10 +36,14 @@ def analyze(args):
     else:
         print_output(args.fname,check_hash(args.fname))
 
+
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('fname',help='file to analyze')
     parser.add_argument('-d',help='directory to analyze',action='store_true')
     args=parser.parse_args()
     analyze(args)
+
+
+
 
