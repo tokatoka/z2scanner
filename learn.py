@@ -1,11 +1,8 @@
 import json
 import matplotlib.pyplot as plt
 import numpy
-from sklearn import datasets
 from sklearn import tree
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import LeaveOneOut
-from sklearn.metrics import accuracy_score
 
 def read_json(path,data,target):
     with open(path) as f:
